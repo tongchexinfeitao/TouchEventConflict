@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    >
+
+   <com.example.toucheventconflictdemo.MyTwoFragmentScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <TextView
+             android:background="@color/colorPrimary"
+             android:gravity="center_vertical"
+             android:text="我是头"
+             android:layout_width="match_parent"
+             android:layout_height="200dp" />
+         <ListView
+             android:id="@+id/list_view"
+             android:layout_width="match_parent"
+             android:layout_height="250dp"></ListView>
+         <TextView
+             android:background="@color/colorPrimary"
+             android:gravity="center_vertical"
+             android:text="我是尾"
+             android:layout_width="match_parent"
+             android:layout_height="200dp" />
+      </LinearLayout>
+   </com.example.toucheventconflictdemo.MyTwoFragmentScrollView>
+
+</LinearLayout>
