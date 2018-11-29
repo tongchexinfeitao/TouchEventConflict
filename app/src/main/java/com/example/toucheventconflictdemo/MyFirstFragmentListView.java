@@ -8,12 +8,12 @@ import android.widget.ListView;
  * Created by hasee on 2018/1/13.
  */
 
-public class MyFragmentOneListView  extends ListView{
-    public MyFragmentOneListView(Context context) {
+public class MyFirstFragmentListView extends ListView{
+    public MyFirstFragmentListView(Context context) {
         super(context);
     }
 
-    public MyFragmentOneListView(Context context, AttributeSet attrs) {
+    public MyFirstFragmentListView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

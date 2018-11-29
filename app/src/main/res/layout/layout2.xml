@@ -4,7 +4,7 @@
     android:background="@color/colorAccent"
     >
 
-   <com.example.toucheventconflictdemo.MyTwoFragmentScrollView
+   <com.example.toucheventconflictdemo.MySencondFragmentScrollView
        android:layout_width="match_parent"
        android:layout_height="match_parent">
 
@@ -29,6 +29,6 @@
              android:layout_width="match_parent"
              android:layout_height="200dp" />
       </LinearLayout>
-   </com.example.toucheventconflictdemo.MyTwoFragmentScrollView>
+   </com.example.toucheventconflictdemo.MySencondFragmentScrollView>
 
 </LinearLayout>

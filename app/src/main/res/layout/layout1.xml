@@ -14,10 +14,10 @@
             android:background="@color/colorPrimaryDark"
             android:orientation="vertical">
 
-            <com.example.toucheventconflictdemo.MyFragmentOneListView
+            <com.example.toucheventconflictdemo.MyFirstFragmentListView
                 android:id="@+id/list_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></com.example.toucheventconflictdemo.MyFragmentOneListView>
+                android:layout_height="wrap_content"></com.example.toucheventconflictdemo.MyFirstFragmentListView>
         </LinearLayout>
 
 

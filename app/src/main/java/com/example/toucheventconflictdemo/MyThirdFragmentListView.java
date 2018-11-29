@@ -9,12 +9,12 @@ import android.widget.ListView;
  * Created by hasee on 2018/1/13.
  */
 
-public class MySanFragmentListView extends ListView {
-    public MySanFragmentListView(Context context) {
+public class MyThirdFragmentListView extends ListView {
+    public MyThirdFragmentListView(Context context) {
         super(context);
     }
 
-    public MySanFragmentListView(Context context, AttributeSet attrs) {
+    public MyThirdFragmentListView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

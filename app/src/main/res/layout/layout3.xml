@@ -17,10 +17,11 @@
              android:text="我是头"
              android:layout_width="match_parent"
              android:layout_height="200dp" />
-         <com.example.toucheventconflictdemo.MySanFragmentListView
+         <com.example.toucheventconflictdemo.MyThirdFragmentListView
              android:id="@+id/list_view"
              android:layout_width="match_parent"
-             android:layout_height="250dp"></com.example.toucheventconflictdemo.MySanFragmentListView>
+             android:layout_height="250dp"></com.example.toucheventconflictdemo.MyThirdFragmentListView>
+
          <TextView
              android:gravity="center_vertical"
              android:text="我是尾"

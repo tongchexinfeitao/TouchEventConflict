@@ -12,14 +12,14 @@ import android.widget.ScrollView;
  * Created by hasee on 2018/1/13.
  */
 
-public class MyTwoFragmentScrollView extends ScrollView {
+public class MySencondFragmentScrollView extends ScrollView {
 
 
-    public MyTwoFragmentScrollView(Context context) {
+    public MySencondFragmentScrollView(Context context) {
         super(context);
     }
 
-    public MyTwoFragmentScrollView(Context context, AttributeSet attrs) {
+    public MySencondFragmentScrollView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
