@@ -20,7 +20,7 @@
          <com.example.toucheventconflictdemo.MyThirdFragmentListView
              android:id="@+id/list_view"
              android:layout_width="match_parent"
-             android:layout_height="250dp"></com.example.toucheventconflictdemo.MyThirdFragmentListView>
+             android:layout_height="250dp"/>
 
          <TextView
              android:gravity="center_vertical"
