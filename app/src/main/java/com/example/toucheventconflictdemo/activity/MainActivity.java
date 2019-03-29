@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.toucheventconflictdemo.FragAdapter;
 import com.example.toucheventconflictdemo.R;
+import com.example.toucheventconflictdemo.fragment.Fragment0;
 import com.example.toucheventconflictdemo.fragment.Fragment1;
 import com.example.toucheventconflictdemo.fragment.Fragment2;
 import com.example.toucheventconflictdemo.fragment.Fragment3;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPager vp = (ViewPager) findViewById(R.id.viewpager);
         //构造适配器
         List<Fragment> fragments = new ArrayList<>();
+        fragments.add(new Fragment0());
         fragments.add(new Fragment1());
         fragments.add(new Fragment2());
         fragments.add(new Fragment3());

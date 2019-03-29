@@ -26,7 +26,6 @@ public class MyThirdFragmentListView extends ListView {
         int action = ev.getAction();
         switch (action) {
             case MotionEvent.ACTION_DOWN:
-                super.onInterceptTouchEvent(ev);
                 //不允许上层viewGroup拦截事件
                 getParent().requestDisallowInterceptTouchEvent(true);
                 break;

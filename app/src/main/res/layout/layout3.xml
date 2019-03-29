@@ -21,7 +21,10 @@
              android:id="@+id/list_view"
              android:layout_width="match_parent"
              android:layout_height="250dp"/>
-
+         <!--<ListView-->
+             <!--android:id="@+id/list_view"-->
+             <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="250dp"/>-->
          <TextView
              android:gravity="center_vertical"
              android:text="我是尾"
