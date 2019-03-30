@@ -74,6 +74,7 @@ public abstract class BaseLazyLoadFragment extends Fragment {
         if (!setIsRealTimeRefresh() && !mIsFirstGetData) {
             return;
         }
+        //可见并且rootView不为空的时候才能加载数据
         if (mIsVisibleToUser && mRootView != null) {
             mIsFirstGetData = false;
             Log.e("TAG", "initData");
