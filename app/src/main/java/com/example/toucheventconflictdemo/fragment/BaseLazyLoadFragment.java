@@ -37,6 +37,14 @@ public abstract class BaseLazyLoadFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+
+        //只要加载过数据，下次再回到该fragment中，肯定会走setUserVisibleHint（true）
+        //所以onActivityCreated得地方只要之前加载过数据，就没有机会再次加载
+        //否则会重复加载     ps：fragment3直接跳转回fragment1
+        if (!mIsFirstGetData) {
+            return;
+        }
         //懒加载数据
         lazyLoadData();
     }
@@ -53,15 +61,20 @@ public abstract class BaseLazyLoadFragment extends Fragment {
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
-        super.setUserVisibleHint(mIsVisibleToUser);
+        super.setUserVisibleHint(isVisibleToUser);
         //设置可视状态
         mIsVisibleToUser = isVisibleToUser;
+
         //懒加载数据
         lazyLoadData();
     }
 
     public void lazyLoadData() {
-        if ((mIsFirstGetData || setIsRealTimeRefresh()) && mIsVisibleToUser && mRootView != null) {
+        //如果不是每次刷新数据，且如果已经加载过数据，那么不执行initData
+        if (!setIsRealTimeRefresh() && !mIsFirstGetData) {
+            return;
+        }
+        if (mIsVisibleToUser && mRootView != null) {
             mIsFirstGetData = false;
             Log.e("TAG", "initData");
             initData();
